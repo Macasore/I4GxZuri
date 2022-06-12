@@ -11,7 +11,7 @@ def read_file_content(filename):
 
 def count_words():
     count = {}
-    text = read_file_content("Reading-Text-Files/story.txt")
+    text = read_file_content("./story.txt")
     list_of_words = text.split()
     for word in list_of_words:
         if word not in count:
@@ -19,5 +19,5 @@ def count_words():
         count[word] += 1 
     return count
 
-print(read_file_content('Reading-Text-Files/story.txt'))
+print(read_file_content("./story.txt"))
 print(count_words())
