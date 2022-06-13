@@ -40,6 +40,8 @@ print("the user won " +str(user_win)+ " number of times")
 print("the computer won " +str(comp_win)+ " number of times")
 if user_win > comp_win:
     print("you are the ultimate winner")
+elif user_win == comp_win:
+    print('it was a tie')
 else:
     print("you lost")
 print('that was nice, goodbye')
